@@ -2,9 +2,6 @@ package lt.web;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-import java.util.ArrayList;
-import java.util.List;
-
 
 @XmlRootElement
 public class Album {
@@ -13,8 +10,6 @@ public class Album {
     private String albumName;
     private int albumDate;
 
-    List<Album> albums = new ArrayList<>();
-    AlbumList albumList = new AlbumList();
 
     public String getAlbumName() {
         return albumName;
