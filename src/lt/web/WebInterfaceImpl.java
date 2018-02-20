@@ -25,7 +25,6 @@ public class WebInterfaceImpl implements WebInterfaceAlbum {
         }
     }
 
-
     @Override
     public List<Album> sortAlbums() {
 
@@ -37,7 +36,6 @@ public class WebInterfaceImpl implements WebInterfaceAlbum {
         }
         return albumList.getAlbums();
     }
-
 
     @Override
     public void getAlbumByName(Album album) {
