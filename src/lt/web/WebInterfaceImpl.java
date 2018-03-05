@@ -1,9 +1,11 @@
 package lt.web;
 
+import javax.jws.HandlerChain;
 import javax.jws.WebService;
 import java.util.List;
 
 @WebService(endpointInterface = "lt.web.WebInterfaceAlbum")
+@HandlerChain(file = "resource/LoggingMessage_handler.xml")
 public class WebInterfaceImpl implements WebInterfaceAlbum {
 
     private AlbumList albumList = new AlbumList();
